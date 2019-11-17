@@ -17,11 +17,13 @@ body{
 .inner-menu{
     align-items: center;
     display: flex;
-    flex-direction: row;
+    /* ★変更 */
+    /*  */
     justify-content: flex-end;
 }
 .inner-menu p:first-child{
     margin-right: auto;
+    margin-left: 55px;
 }
 
 .inner-menu .logo a img{
@@ -72,8 +74,12 @@ body{
 .pagePath{
     color: #999999;
     font-size: 12px;
-    margin: 100px auto 50px auto;
+    /* ★変更点 */
+    left: 0;
+    right: 0;
+    margin: 100px auto 30px auto;
     width: 1000px;
+    /* ★変更点 */
 }
 .pagePath a{
     color: #999999;
@@ -86,8 +92,12 @@ body{
 }
 .mainVisual .mainVisualText{
     position: absolute;
-    right: 890px;
-    top: 40px;
+/*  ★変更点    */
+    left: 0;
+    right: 0;
+    margin: 60px auto 0 auto;
+    width: 1000px;
+/*　 ★変更点 */
 }
 
 .mainVisual .mainVisualText p{
@@ -171,7 +181,6 @@ body{
     margin: 0 0 20px;
     position:relative;
     padding-left:32px;
-    text-indent: 1.5;
 }
 
 #main h2.pageTitle:before{
@@ -299,12 +308,13 @@ p.btn{
 }
 
 /* NRIの強みリスト */
+
+/*★ 落ちたときの幅合わせる */
 .local-navigation{
     background-color: #deecf8;
     margin: 40px 0 40px 0;
     padding: 20px;
 }
-
 .flex_test-box ul{
     align-items: center;
     display: flex;
@@ -454,6 +464,7 @@ p.btn{
 }
 .followUs-icon ul:before{
     content: 'Follow Us';
+    /* ★　↑HTMLに直接記載 */
     color: #005bac;
     font-size: 20px;
     font-family: HelveticaNeue;
